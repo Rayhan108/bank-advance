@@ -1,5 +1,7 @@
 document.getElementById('withdraw-btn').addEventListener('click',function(){
     const withdrawField = getElementValueById('withdraw-field');
+    // validation
+
     if(isNaN(withdrawField)){
         alert('Please enter a valid number');
         return;
