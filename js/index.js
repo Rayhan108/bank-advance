@@ -1,6 +1,7 @@
 document.getElementById('login-btn').addEventListener('click',function(){
     const inputEmail =document.getElementById('user-email');
     const emailValue =inputEmail.value;
+    inputEmail.value='';
     const inputPassword = document.getElementById('user-password');
     const passwordValue = inputPassword.value;
     if(emailValue === 'admin@gmail.com' && passwordValue === 'admin'){
@@ -13,8 +14,9 @@ document.getElementById('login-btn').addEventListener('click',function(){
 })
 
 // document.addEventListener('keydown',function(event){
+//     console.log(event.key);
 //     if(event.key === 'Enter'){
-//         document.getElementById('login-btn').addEventListener('click',function(){
+    
 //             const inputEmail =document.getElementById('user-email');
 //             const emailValue =inputEmail.value;
 //             const inputPassword = document.getElementById('user-password');
@@ -26,6 +28,6 @@ document.getElementById('login-btn').addEventListener('click',function(){
 //             }else{
 //                 alert('wrong password,please enter a right password');
 //             }
-//         })
+       
 //     }
 // })

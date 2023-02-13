@@ -1,24 +1,26 @@
 
 // function for take a value from input or text area field
 
-document.getElementValueById(eventId){
-    const depositeField = document.getElementById('eventId');
-    const depositeFieldValueString = depositeField.value;
-    depositeField.value='';
-    const depositeFieldValue =parseFloat(depositeFieldValueString);
-    return depositeFieldValue; 
+function getElementValueById(eventId){
+    const eventField = document.getElementById(eventId);
+    const eventFieldValueString = eventField.value;
+    eventField.value='';
+    const eventFieldValue =parseFloat(eventFieldValueString);
+    return eventFieldValue; 
+    
 }
 
 // function for take a value from other html elements
 
-document.getTextElementValueById(elementId){
-    const depositeTotal = document.getElementById('elementId');
-    const depositeTotalString = depositeTotal.innerText;
-    const depositeTotalValue = parseFloat(depositeTotalString);
+function getTextElementValueById(elementId){
+    const elementIdTotal = document.getElementById(elementId);
+    const elementIdTotalString = elementIdTotal.innerText;
+    const elementIdTotalValue = parseFloat(elementIdTotalString);
+    return elementIdTotalValue;
 }
 
 // function for set the value 
-document.setTextElementValueById(elementId,newValue){
-    const textElement = document.getElementById('elementId');
+function setTextElementValueById(elementId,newValue){
+    const textElement = document.getElementById(elementId);
     textElement.innerText = newValue; 
 }
